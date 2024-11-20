@@ -1,0 +1,18 @@
+{
+  "name": "day_01",
+  "version": "1.0.0",
+  "description": "backend course day 01",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "node",
+    "saim"
+  ],
+  "author": "saimRaza",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
