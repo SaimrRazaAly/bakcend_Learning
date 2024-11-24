@@ -1,0 +1,21 @@
+{
+  "name": "professional_backend_setup",
+  "version": "1.0.0",
+  "description": "a setup of professional backend app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "backend",
+    "javascript",
+    "setup"
+  ],
+  "author": "Saim Raza",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3"
+  }
+}
