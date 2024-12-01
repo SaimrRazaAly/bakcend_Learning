@@ -1,7 +1,22 @@
-const asyncHandlers = () => {};
+// code for reUsing main code of tr catch //method 1
+ 
+const asyncHandler = (requestHandler) => {
+  return (req, res, next) => {
+    Promise.resolve(requestHandler(req, res, next)).catch((err) => next(err));
+  };
+};
 
+//method 1
+// const asyncHandler = (fun) => async (req,res,next ) =>{
+//     try{
+//         await fun(req,res,next)
+//     }
+//     catch(error){
+//         res.status(error.code || 404 ).json({
+//             success:false,
+//             message:error.message
+//         })
+//     }
+// }
 
-
-// code for reUsing main code of tr catch
-
-export { asyncHandlers };
+export { asyncHandler };
