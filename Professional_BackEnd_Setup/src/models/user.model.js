@@ -9,26 +9,26 @@ const userSchema = new Schema(
     // },
     username: {
       type: String,
-      requried: true,
+      required: true,
       trim: true,
       lowercase: true,
       index: true,
     },
     email: {
       type: String,
-      requried: true,
+      required: true,
       trim: true,
       lowercase: true,
     },
     fullName: {
       type: String,
-      requried: true,
+      required: true,
       trim: true,
       index: true,
     },
     avatar: {
       type: String, //Cloudnary par file upload karnay say url data hay URL
-      requried: true,
+      required: true,
     },
     coverImage: {
       type: String,
@@ -42,7 +42,7 @@ const userSchema = new Schema(
     ],
     password: {
       type: String,
-      requried: [true, "password is requried"],
+      required: [true, "password is requried"],
     },
     refreshToken: {
       type: String,
